@@ -95,7 +95,7 @@ $transaction_data = [
         'finish' => 'https://5f96-2001-448a-404a-16f6-24ed-a2a6-4c99-b4eb.ngrok-free.app/google-login/skripsi/index.php',
     ]
 ];
-
+// tes
 try {
     $snapToken = \Midtrans\Snap::getSnapToken($transaction_data);
     echo json_encode(['snapToken' => $snapToken]);
