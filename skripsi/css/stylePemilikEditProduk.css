@@ -1,0 +1,102 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+}
+
+body {
+  background-color: var(--warna-utama) !important;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  background-color: var(--biruDongker);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%; 
+  margin: 0 auto;
+  color: var(--warna-utama);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--biruMuda);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--biruMuda);
+  background-color: var(--warna-utama);
+  color: black;
+}
+
+textarea {
+  height: 200px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--biruMuda);
+  color: var(--warna-utama);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0d5f74;
+}
+
+a {
+  display: block;
+  margin: 20px 0 20px 0;
+  color: #04364a;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+a.btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+  color: #176b87;
+}
+
+small {
+  color: var(--biruDongker);
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}

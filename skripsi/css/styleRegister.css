@@ -1,0 +1,37 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+}
+
+.form-container form .error-msg {
+  background-color: rgb(255, 50, 50);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 60px;
+  background-color: var(--biruDongker);
+}
+
+.form-container form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+  background-color: var(--warna-utama);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form > * {
+  margin: 10px;
+}

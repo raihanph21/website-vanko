@@ -1,0 +1,180 @@
+* {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img,
+button,
+input,
+li,
+.card,
+.sticky-top img {
+  width: auto; 
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+  --biruGradient: linear-gradient(45deg, #1d7373, #04364a); 
+}
+
+body {
+  background-color: var(--warna-utama) !important;
+}
+
+li {
+  margin: 2vh;
+}
+
+.nav li,
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sticky-top img {
+  width: 15vw;
+  height: 25vh;
+  display: block; 
+  margin: 0 auto;
+}
+
+.sticky-top {
+  display: flex;
+  justify-content: center;
+  background-color: var(--biruDongker);
+  height: 100vh;
+  padding: 10vh 0 0 0;
+}
+
+.col-9 .btn {
+  background-color: var(--biruDongker);
+  margin: 3vh 0;
+}
+
+.col-9 h1 {
+  margin: 3vh 0;
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--biruDongker);
+  border-collapse: collapse;
+  border-bottom: var(--biruDongker);
+}
+
+table td {
+  cursor: pointer;
+  border-left: 1px solid var(--biruDongker);
+  border-right: 1px solid var(--biruDongker);
+}
+
+#abc {
+  text-align: left;
+}
+
+#hargaP,
+#hargaPDiskon,
+#tHargaP,
+#tHargaPDiskon {
+  text-align: right;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th {
+  background-color: var(--biruDongker) !important;
+  color: white !important;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+  width: 10%;
+}
+
+th:nth-of-type(2),
+td:nth-of-type(2) {
+  width: 40%;
+}
+
+th:nth-of-type(3),
+td:nth-of-type(3) {
+  width: 10%;
+}
+
+th:nth-of-type(4),
+td:nth-of-type(4) {
+  width: 7%; 
+}
+
+th:nth-of-type(5),
+td:nth-of-type(5) {
+  width: 15%; 
+}
+
+th:nth-of-type(6),
+td:nth-of-type(6) {
+  width: 10%; 
+}
+
+th:nth-of-type(7),
+td:nth-of-type(7) {
+  width: 15%; 
+  text-align: center;
+  vertical-align: middle;
+}
+
+th:nth-of-type(8),
+td:nth-of-type(8) {
+  width: 10%; 
+}
+
+.status-aktif {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.status-nonaktif {
+  color: red;
+  font-weight: bold;
+}
+.status-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-green {
+  background-color: green;
+  text-align: center;
+  vertical-align: middle;
+}
+.dot-red {
+  background-color: red;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#bTambah,
+#bRestock {
+  width: auto;
+}
+
+#search-bar {
+  width: 50%;
+}
+
+#tEdit {
+  vertical-align: middle;
+}
+
+.nav-link.active {
+  background-color: var(--biruMuda);
+}

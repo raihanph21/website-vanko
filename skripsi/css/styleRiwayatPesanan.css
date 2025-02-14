@@ -1,0 +1,179 @@
+* {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img, button, input, li, .card, .sticky-top img {
+  width: auto; 
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+  --biruGradient: linear-gradient(45deg, #1d7373, #04364a); 
+}
+
+nav {
+  background-color: var(--biruDongker);
+}
+
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover {
+  color: var(--warna-utama);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--warna-utama);
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.user-dropdown:hover ~ * {
+  opacity: 0.5;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.h3pesanan {
+  padding: 15vh 0 0 0;
+}
+
+.containerC {
+  padding: 0 0 10vh 0;
+}
+
+.containerC form {
+  max-width: fit-content;
+  margin: auto;
+}
+
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid var(--biruDongker);
+  border-radius: 5px;
+  max-width: fit-content;
+}
+
+#btnSubmit {
+  background: var(--biruDongker);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  max-width: fit-content;
+}
+
+#btnSubmit:hover {
+  background-color: rgb(13, 110, 253);
+} 
+
+table.table {
+  width: 75%;
+  margin: auto;
+  table-layout: fixed;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+#tHargaP, #hargaP {
+  text-align: right;
+}
+
+th {
+  background-color: var(--biruDongker) !important;
+  color: white !important;
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+  background-color: #dafffb;
+  height: 50vh;
+  color: var(--biruDongker);
+  border-top: 1px solid var(--biruMuda);
+}
+
+footer h3 {
+  padding: 25px;
+  color: var(--biruDongker);
+}
+
+footer p {
+  text-align: center;
+  padding: 0 200px;
+}
+
+footer h6 {
+  padding-bottom: 15px;
+  color: var(--biruDongker);
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+}
+
+footer .fa {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--warna-utama);
+  background-color: #04364a;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+#pagination {
+  background-color: white;
+}
+
+#pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  background-color: var(--biruDongker) !important;
+  color: white;
+}
+
+.pagination li a:hover {
+  background-color: rgb(13, 110, 253) !important;
+  color: white;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: rgb(13, 110, 253) !important; 
+  color: white;
+}

@@ -1,0 +1,120 @@
+* {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img, button, input, li, .card, .sticky-top img {
+  width: auto; 
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+  --warna-teks-utama: #333333; 
+  --warna-teks-sekunder: #5a5a5a; 
+  --warna-border: #cccccc;
+  --warna-hover: #009688; 
+  --biruGradient: linear-gradient(45deg, #1d7373, #04364a); 
+}
+
+
+body {
+  background-color: var(--warna-utama) !important;
+}
+
+li {
+  margin: 2vh;
+}
+
+.nav li,
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sticky-top img {
+  width: 15vw;
+  height: 25vh;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.sticky-top {
+  display: flex;
+  background-color: var(--biruDongker);
+  height: 100vh;
+  padding: 10vh 0 0 0;
+}
+
+h2 {
+  color: var(--biruDongker); 
+  margin: 0 0 3vh 0 !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: var(--putih);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--biruDongker);
+  border-bottom: var(--biruDongker);
+}
+
+table td {
+  cursor: pointer;
+  border-left: 1px solid var(--biruDongker);
+  border-right: 1px solid var(--biruDongker);
+}
+
+table th, table td {
+  text-align: left;
+  border-bottom: 1px solid var(--abuMuda);
+}
+
+table th {
+  background-color: var(--biruDongker) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+th:nth-child(1), td:nth-child(1) { 
+  width: 35%; 
+}
+
+th:nth-child(2), td:nth-child(2) { 
+  width: 10%
+} 
+th:nth-child(3), td:nth-child(3), 
+th:nth-child(4), td:nth-child(4), 
+th:nth-child(5), td:nth-child(5)  {
+  width: 15%; 
+}
+
+.col-md-3 .btn {
+  background-color: var(--biruDongker);
+}
+
+label {
+  color: var(--warna-teks-sekunder);
+}
+
+input[type="month"] {
+  padding: 1vh;
+  border: 1px solid var(--warna-border);
+  border-radius: 4px;
+}
+
+input[type="month"]:focus {
+  outline: none;
+  border-color: var(--warna-hover);
+}
+
+.nav-link.active {
+  background-color: var(--biruMuda);
+}
+
+#tTotalPend, #tTotalPeng, #tTotalKeun, #totalPend, #totalPeng, #totalKeun {
+  text-align: right;
+}

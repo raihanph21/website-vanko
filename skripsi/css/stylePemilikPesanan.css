@@ -1,0 +1,204 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+img, button, input, li, .card, .sticky-top img {
+  width: auto; 
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+  --putih: #ffffff;
+  --abuMuda: #f4f4f4; 
+  --biruGradient: linear-gradient(45deg, #1d7373, #04364a); 
+}
+
+body {
+  background-color: var(--warna-utama) !important;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+li {
+  margin: 2vh;
+}
+
+.nav li, li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sticky-top img {
+  width: 15vw;
+  height: 25vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.sticky-top {
+  display: flex;
+  justify-content: center;
+  background-color: var(--biruDongker);
+  height: 100vh;
+  padding: 10vh 0 0 0;
+}
+
+.pesanan {
+  padding: 5vh 5vw;
+}
+
+h1, h2, h3 {
+  color: var(--biruDongker);
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: var(--putih);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--biruDongker);
+  border-bottom: var(--biruDongker);
+}
+
+table td {
+  cursor: pointer;
+  border-left: 1px solid var(--biruDongker);
+  border-right: 1px solid var(--biruDongker);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--abuMuda);
+}
+
+table th {
+  background-color: var(--biruDongker) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+#tHargaP, #hargaP {
+  text-align: right;
+}
+
+
+table tr:nth-child(even) {
+  background-color: var(--abuMuda);
+}
+
+table tr:hover {
+  background-color: var(--biruMuda);
+  color: white;
+}
+
+table th:nth-child(1) {
+  width: 15%;
+}
+
+table th:nth-child(2) {
+  width: 30%; 
+}
+
+table th:nth-child(3) {
+  width: 21%;
+}
+
+table th:nth-child(4) {
+  width: 30%;
+}
+
+table th:nth-child(5) {
+  width: 30%; 
+}
+
+#totalP, #tTotalP {
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--biruDongker) !important;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgb(13, 110, 253) !important;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  border: 1px solid var(--biruDongker);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background: var(--biruDongker);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#limit {
+  padding: 10px;
+  border: 1px solid var(--biruDongker);
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: var(--biruDongker);
+  color: white;
+}
+
+
+#btnSubmit {
+  display: flex;
+  align-items: end;
+  padding-bottom: 2px;
+}
+
+#btnSubmit .btn {
+  padding: 9px;
+  margin-right: 12px;
+}
+
+#btnSubmit a {
+  background-color: var(--biruDongker);
+}
+
+#btnSubmit a:hover {
+  background-color: lightblue;
+}
+
+.nav-link.active {
+  background-color: var(--biruMuda); 
+}
+
+.pagination li a {
+  background-color: var(--biruDongker);
+  color: white;
+}
+
+.pagination li a:hover {
+  background-color: rgb(13, 110, 253);
+}
+
+#bPesananOffline {
+  width: 15vw;
+}

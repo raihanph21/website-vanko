@@ -1,0 +1,156 @@
+* {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+}
+
+nav {
+  background-color: var(--biruDongker);
+}
+
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover {
+  color: var(--warna-utama);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--warna-utama);
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.user-dropdown:hover ~ * {
+  opacity: 0.5;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.user-dropdown:hover ~ .containerJ,
+.user-dropdown:hover ~ .produk-container,
+.user-dropdown:hover ~ .artikel-container,
+.user-dropdown:hover ~ footer {
+  opacity: 0.5 !important;
+}
+
+form a {
+  margin: 0 1vw;
+}
+
+footer {
+  margin-top: 10vh;
+  text-align: center;
+  background-color: #dafffb;
+  height: 50vh;
+  color: var(--biruDongker);
+  border-top: 1px solid var(--biruMuda);
+}
+
+footer h3 {
+  padding: 25px;
+  color: var(--biruDongker);
+}
+
+footer p {
+  text-align: center;
+  padding: 0 200px;
+}
+
+footer h6 {
+  padding-bottom: 15px;
+  color: var(--biruDongker);
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+}
+
+footer .fa {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--warna-utama);
+  background-color: #04364a;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+.product-details {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  padding: 2vh 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.product-details img {
+  width: 100%;
+  height: 40vh;
+  margin: 3vh 0 5vh 0;
+}
+.product-details h4 {
+  text-align: center;
+  margin: 0 0 5vh 0;
+}
+.product-details p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.add-to-cart {
+  text-align: center;
+}
+.add-to-cart button {
+  width: fit-content;
+  padding: 1vh 1vw;
+  font-size: 0.9rem;
+}
+
+#search {
+  margin-top: 18vh;
+  position: relative; 
+}
+
+#search-result {
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px; 
+  max-height: 300px;
+  overflow-y: auto; 
+  display: none;
+}

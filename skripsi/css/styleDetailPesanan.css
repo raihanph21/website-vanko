@@ -1,0 +1,141 @@
+* {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+}
+
+nav {
+  background-color: var(--biruDongker);
+}
+
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover {
+  color: var(--warna-utama);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--warna-utama);
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.user-dropdown:hover ~ * {
+  opacity: 0.5;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.h3pesanan {
+  padding: 15vh 0 0 0;
+}
+
+.containerC {
+  padding: 10vh 10vw;
+}
+
+table.table {
+  width: 100%;
+  margin: auto;
+  table-layout: fixed;
+}
+
+th {
+  width: 20%;
+}
+
+th:nth-of-type(1), td:nth-of-type(1) {
+  width: 70%; 
+}
+
+th:nth-of-type(2), td:nth-of-type(2) {
+  width: 20%; 
+}
+
+th:nth-of-type(3), td:nth-of-type(3) {
+  width: 10%; 
+}
+
+
+footer {
+  text-align: center;
+  background-color: #dafffb;
+  height: 50vh;
+  color: var(--biruDongker);
+  border-top: 1px solid var(--biruMuda);
+}
+
+footer h3 {
+  padding: 25px;
+  color: var(--biruDongker);
+}
+
+footer p {
+  text-align: center;
+  padding: 0 200px;
+}
+
+footer h6 {
+  padding-bottom: 15px;
+  color: var(--biruDongker);
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+}
+
+footer .fa {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--warna-utama);
+  background-color: #04364a;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.containerC .card {
+  border-radius: 1pc;
+}
+
+.card-body {
+  border: 1px solid var(--biruMuda );
+  border-radius: 1pc;
+}
+
+
+#hargaP, #tHargaP {
+  text-align: right;
+}

@@ -1,0 +1,80 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+img, button, input, li, .card, .sticky-top img {
+  width: auto; 
+}
+
+:root {
+  --warna-utama: #dafffb;
+  --biruDongker: #04364a;
+  --biruMuda: #176b87;
+}
+
+body {
+  background-color: var(--warna-utama) !important;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+li {
+  margin: 2vh;
+}
+
+.nav li,
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sticky-top img {
+  width: 15vw;
+  height: 25vh;
+  display: block; 
+  margin: 0 auto; 
+} 
+
+.sticky-top {
+  display: flex;
+  justify-content: center;
+  background-color: var(--biruDongker);
+  height: 100vh;
+  padding: 10vh 0 0 0;
+}
+
+.pesanan {
+  padding: 5vh 5vw;
+}
+
+.invoice-box {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header h2 {
+  margin-bottom: 10px;
+}
+
+.customer-info, .product-list {
+  margin-top: 20px;
+}
+
+.product-list h3 {
+  margin-bottom: 10px;
+}
+
+.product-item {
+  margin-bottom: 15px;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+hr {
+  margin: 10px 0;
+}
